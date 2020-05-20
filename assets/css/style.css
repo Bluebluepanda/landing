@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 h1,
@@ -75,4 +76,107 @@ h6 {
 
 .nav__link:hover:after {
   opacity: 1;
+}
+
+/*intro*/
+.intro {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/1.jpg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro__iner {
+  width: 100%;
+  max-width: 850px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro__uptitle {
+  color: white;
+  font-size: 72px;
+  font-family: "Kaushan Script", sans-serif;
+  margin-bottom: 20px;
+}
+
+.intro__title {
+  font-size: 150px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  line-height: 1;
+}
+
+.intro__title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  margin: 40px auto;
+}
+/* Button */
+.btn {
+  border: 3px solid white;
+  color: white;
+  padding: 8px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.2s linear, color 0.2s linear;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.slider__iner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__item {
+  width: 15%;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-top: 3px solid #fff;
+  opacity: 0.7;
+}
+
+.slider__item.active {
+  opacity: 1;
+}
+
+.slider__item.active:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 3px;
+  background-color: #a2b045;
+  left: 0;
+  z-index: 1;
+  top: -3px;
+}
+
+.slider__num {
+  font-size: 24px;
+  font-weight: 700;
 }
